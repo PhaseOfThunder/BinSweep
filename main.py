@@ -1,4 +1,6 @@
-# This is the main file, program execution happens here (run with Windows + F5)
+# This is the main file of BinSweep
+# The following functions (which are defined in another file) use the ctypes library to run Windows functions needed for the program: 
+# get_item_count_in_recycle_bin(), empty_recycle_bin(), notify_recycle_bin_emptied(item_count)
 
 import recycle_bin_actions as rb
 import time

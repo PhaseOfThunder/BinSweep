@@ -19,3 +19,4 @@ If you do not know how to do this, look it up on Google. It is simple and should
 I am open to all suggestions, feedback, or concerns regarding BinSweep.
 
 PYTHON EXE BUILT USING THE FOLLOWING COMMAND: pyinstaller --onefile --noconsole main.py
+SOME ANTIVIRUS TOOLS FLAG --onefile PYINSTALLER APPS AS MALWARE FREQUENTLY. EXPECT THIS & WINDOWS ANTI-VIRUS ISSUES. CHECK THE VirusTotal REPORT TO SEE FULL DETAILS

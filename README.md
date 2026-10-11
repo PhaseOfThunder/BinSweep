@@ -10,7 +10,7 @@ I promise this is not a hack; BinSweep does not look at any of your files in or 
 
 1. Tested using Task Manager on my computer with 16 GB of DDR4 RAM. It uses about 1.5–2 MB of RAM while idle in the background.
 2. BinSweep is a 100% background process, meaning there is no UI, setup, or configuration required. Just run the .exe file, and it will work.
-3. It only works on Windows 11 with standard 64-bit architecture.
+3. It is only guaranteed to work for Windows 11 with standard 64-bit architecture; other architectures or Windows versions I cannot guarantee.
 4. To stop BinSweep, simply open Task Manager, search for BinSweep, and end the task.
 
 If you love BinSweep and want it to always run, you can use Windows Task Scheduler to auto-run BinSweep when you log into your computer. This way, you do not have to manually run the .exe file every time.

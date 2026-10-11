@@ -17,3 +17,5 @@ If you love BinSweep and want it to always run, you can use Windows Task Schedul
 If you do not know how to do this, look it up on Google. It is simple and should take no more than 5 minutes.
 
 I am open to all suggestions, feedback, or concerns regarding BinSweep.
+
+PYTHON EXE BUILT USING THE FOLLOWING COMMAND: pyinstaller --onefile --noconsole main.py

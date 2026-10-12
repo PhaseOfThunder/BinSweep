@@ -1,5 +1,5 @@
 # This is the main file of BinSweep
-# The following functions (which are defined in another file) use the ctypes library to run Windows functions needed for the program: 
+# The following functions are defined in recycle_bin_actions.py: 
 # get_item_count_in_recycle_bin(), empty_recycle_bin(), notify_recycle_bin_emptied(item_count)
 
 import recycle_bin_actions as rb

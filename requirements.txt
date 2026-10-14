@@ -1,1 +1,4 @@
-winotify
+PySide6 
+winotify 
+winshell 
+pywin32

@@ -1,4 +1,7 @@
 # This is the main file, program execution happens here
+# If you will use this code, the BinSweep icon is not included in this repository, so you can create your own and name it "icon.ico",
+# or just scrap the icon entirely.
+
 
 import recycle_bin_actions as rb
 import os

@@ -48,7 +48,9 @@ That's it. To undo this, delete the shortcut from that folder.
 
 BinSweep is an unsigned exe from an 'unknown' developer (me), and it deletes files, so some antivirus tools may flag it. Expect this.
 
-If Windows shows **"Windows protected your PC"**, click **More info → Run anyway**. If you would rather not trust the exe, you can run it from source instead (see below).
+If Windows shows **"Windows protected your PC"**, click **More info → Run anyway**.
+
+[VirusTotal_Report.png] is a VirusTotal report I ran with the .exe file, you can check it for details.
 
 ## Uninstall
 

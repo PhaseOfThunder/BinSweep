@@ -1,32 +1,61 @@
 # About BinSweep
 
-BinSweep is a free Python utility I created that automatically empties the Recycle Bin on Windows as a background tool.
+> [!WARNING]
+> **BinSweep permanently deletes everything in your Recycle Bin. There are ZERO recovery options.**
+> This includes anything already in your Recycle Bin the moment you first start it, so check it before you run BinSweep.
+
+## About
+
+BinSweep is a free Python utility I created that automatically empties the Recycle Bin on Windows in the background.
 I made this because I do not use the Recycle Bin and personally despise it. BinSweep essentially removes the need to even think about it.
-**Warning:** I am NOT responsible if you lose something important.
 
-BinSweep checks every 5 seconds for items in your Recycle Bin. If it finds any, it automatically empties them and sends a quick notification showing how many items were removed.
-If no items are found, it does nothing and goes back to sleep for another 5 seconds before checking again.
-I promise this is not a hack; BinSweep does not look at any of your files in or out of your Recycle Bin. It only counts and empties items in the Recycle Bin.
+You set a custom **check frequency**, and BinSweep will check your Recycle Bin every that many seconds. If it finds any items, it empties them and sends a quick notification showing how many items were removed, plus the names of the first 3.
+If no items are found, it does nothing and goes back to sleep.
 
-**Before:** a deleted file sitting in the Recycle Bin
+BinSweep does not open, read, modify, or store the contents of any of your files, in or out of your Recycle Bin. It only counts the items, empties the bin, and shows the item names. 
+BinSweep is open source, so you can see exactly what it does in the files in this repository.
 
-![Recycle Bin with a deleted file in it](Demonstration_2.png)
+- **Memory usage:** ~25 MB on average (measured with Task Manager on my PC)
+- **Not a full app:** it only has a small UI in the system tray and runs mostly in the background
+- **Supported:** Windows 11, 64-bit. Other Windows versions or architectures may work, but I cannot guarantee it
 
-**After:** the Recycle Bin once BinSweep has emptied it
+## Install
 
-![Empty Recycle Bin after BinSweep ran](Demonstration_1.png)
+1. Download `BinSweep.zip` from the [Releases](../../releases) page.
+2. Unzip/extract it, and DO NOT modify anything.
+3. Run `BinSweep.exe`.
 
-1. Tested using Task Manager on my computer with 16 GB of DDR4 RAM. It uses about 1.5–2 MB of RAM while idle in the background.
-2. BinSweep is a 100% background process, meaning there is no UI, setup, or configuration required. Just run the .exe file, and it will work.
-3. It is only guaranteed to work for Windows 11 with standard 64-bit architecture; other architectures or Windows versions I cannot guarantee.
-4. To stop BinSweep, simply open Task Manager, search for BinSweep, and end the task.
+> [!IMPORTANT]
+> Keep `BinSweep.exe` and the `_internal` folder next to each other. The exe will not start without `_internal`.
 
-If you love BinSweep and want it to always run, you can use Windows Task Scheduler to auto-run BinSweep when you log into your computer. This way, you do not have to manually run the .exe file every time.
-If you do not know how to do this, look it up on Google. It is simple and should take no more than 5 minutes.
+## Usage
 
-I am open to all suggestions, feedback, or concerns regarding BinSweep.
+Click the BinSweep icon in the system tray (next to the clock) to open the panel. If you do not see it, click the **^** arrow; Windows hides new tray icons by default.
 
-PYTHON EXE BUILT USING THE FOLLOWING COMMAND: pyinstaller --onefile --noconsole main.py
-SOME ANTIVIRUS TOOLS FLAG --onefile PYINSTALLER APPS AS MALWARE FREQUENTLY. EXPECT THIS & WINDOWS ANTI-VIRUS ISSUES. CHECK THE VirusTotal REPORT TO SEE FULL DETAILS
+- **Change the check frequency:** enter the time in seconds in the panel. It is saved and remembered next time.
+- **Quit:** click the red **Quit BinSweep** button, or right-click the tray icon and choose **Quit**.
 
-![VirusTotal report for BinSweep.exe](VirusTotal_Report.png)
+### Start BinSweep automatically
+
+If you love BinSweep and want it to start when you log in, so you do not have to run the .exe manually every time:
+
+1. Press **Win + R**, type `shell:startup`, and press Enter.
+2. In the folder that opens, right-click → **New → Shortcut** and pick your `BinSweep.exe`.
+
+That's it. To undo this, delete the shortcut from that folder.
+
+## Antivirus / SmartScreen
+
+BinSweep is an unsigned exe from an 'unknown' developer (me), and it deletes files, so some antivirus tools may flag it. Expect this.
+
+If Windows shows **"Windows protected your PC"**, click **More info → Run anyway**. If you would rather not trust the exe, you can run it from source instead (see below).
+
+## Uninstall
+
+1. Quit BinSweep from the tray.
+2. Delete the BinSweep folder, plus the startup shortcut if you made one.
+3. *(Optional)* Delete the saved settings: open `regedit` and delete `HKEY_CURRENT_USER\Software\BinSweep`.
+
+## Feedback
+
+I am open to all suggestions, feedback, or concerns regarding BinSweep. Feel free to open an issue.

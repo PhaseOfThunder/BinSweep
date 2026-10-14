@@ -21,7 +21,7 @@ BinSweep is open source, so you can see exactly what it does in the files in thi
 
 ## Install
 
-1. Download `BinSweep.zip` from the [Releases](../../releases) page.
+1. Download `BinSweep.zip` from the [Releases](../../releases) page (pick the latest version).
 2. Unzip/extract it, and DO NOT modify anything.
 3. Run `BinSweep.exe`.
 

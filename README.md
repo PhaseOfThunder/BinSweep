@@ -58,4 +58,5 @@ If Windows shows **"Windows protected your PC"**, click **More info → Run anyw
 
 ## Feedback
 
-I am open to all suggestions, feedback, or concerns regarding BinSweep. Feel free to open an issue.
+I am open to all suggestions, feedback, or concerns regarding BinSweep. 
+Feel free to report any issues in the comments or directly to me.
